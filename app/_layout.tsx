@@ -1,11 +1,16 @@
 // app/_layout.tsx
-import { Slot } from 'expo-router';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Stack } from 'expo-router';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+
 
 export default function Layout() {
-  return (
-    <SafeAreaProvider>
-      <Slot />
-    </SafeAreaProvider>
-  );
+    return (
+        <SafeAreaProvider>
+            <SafeAreaView style={{ flex: 1 }}>
+                <Stack
+                    screenOptions={{headerShown:false}}
+                />
+            </SafeAreaView>
+        </SafeAreaProvider>
+    )
 }
