@@ -10,7 +10,13 @@ export default function TabLayout() {
             tabBarShowLabel:false,
             headerShown:false,
             tabBarActiveTintColor: COLORS.primary,
-            tabBarInactiveTintColor: COLORS.grey
+            tabBarInactiveTintColor: COLORS.grey,
+            tabBarStyle:{
+                backgroundColor:"black",
+                borderTopWidth:0,
+                position:"absolute",
+                elevation:0,
+            }
         }}
     >
         <Tabs.Screen
